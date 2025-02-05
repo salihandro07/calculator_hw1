@@ -57,11 +57,7 @@ class _State extends State<CalculatorScreen> {
                           CalcButton(text: "%", color: AppColors.grey),
                           SizedBox(width: 10),
                           CalcButton(text: "/", isActionColor: true,
-                          OnTap: (){
-                            setState(() {
-
-                            });
-                          },),
+                         ),
                         ],
                       ),
                       const SizedBox(
