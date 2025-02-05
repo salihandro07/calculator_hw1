@@ -5,6 +5,7 @@ class CalcButton extends StatelessWidget {
   final String text;
   final int flex;
   final bool isActionColor;
+<<<<<<< HEAD
   final Color? color;
   final Function()? OnTap;
 
@@ -15,10 +16,14 @@ class CalcButton extends StatelessWidget {
       this.OnTap,
       this.flex = 1,
       super.key});
+=======
+  const CalcButton({required this.text, this.isActionColor = false, this.flex = 1, super.key});
+>>>>>>> 1c2291b076032da7d53800fb7bdc11e3cb16fa30
 
   @override
   Widget build(BuildContext context) {
     return Expanded(
+<<<<<<< HEAD
       child: InkWell(
         onTap: OnTap,
         child: Container(
@@ -34,6 +39,18 @@ class CalcButton extends StatelessWidget {
             text,
             style: TextStyle(fontSize: 21, color: Colors.white),
           )),
+=======
+      flex: flex,
+      child: Container(
+        height: 77,
+        width: 77,
+        color: isActionColor? AppColors.orange : AppColors.grey,
+        child: Center(
+          child: Text(
+            text,
+            style: TextStyle(fontSize: 21, color: Colors.white),
+          ),
+>>>>>>> 1c2291b076032da7d53800fb7bdc11e3cb16fa30
         ),
       ),
     );
